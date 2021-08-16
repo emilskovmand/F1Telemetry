@@ -1,0 +1,25 @@
+{
+  "name": "f1telemetry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"npm run UDPServer\" \"npm run server\"",
+    "UDP": "node UDPServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilskovmand/F1Telemetry.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilskovmand/F1Telemetry/issues"
+  },
+  "homepage": "https://github.com/emilskovmand/F1Telemetry#readme",
+  "dependencies": {
+    "concurrently": "^6.2.1",
+    "express": "^4.17.1",
+    "f1-telemetry-client": "^0.1.26"
+  }
+}
